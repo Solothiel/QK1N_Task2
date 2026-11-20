@@ -25,9 +25,9 @@ def calculate_state_statistics(raw_data,state, numeric_variables):
         statistics_summary.append(state_metrics)
 
     # store results in new Dataframe
-    statistics_st = pd.DataFrame(statistics_summary)
+    state_statistics = pd.DataFrame(statistics_summary)
 
     # Export statistics to CSV
-    statistics_df.to_csv()
+    state_statistics.to_csv()
 
 
