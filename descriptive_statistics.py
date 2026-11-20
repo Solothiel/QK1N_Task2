@@ -9,10 +9,10 @@ def calculate_state_statistics(raw_data,state, numeric_variables):
     # Groups businesses by state.
     state_groups = raw_data.groupby(state)
 
-    #creates empty list for the descriptive statistics (mean,medium, min, and max)
+    #creates an empty list for the descriptive statistics (mean,medium, min, and max)
     statistics_summary = []
 
-    # calculate the descriptive stastics for each state.
+    # calculate the descriptive statistics for each state.
     for state_name, current_group in state_groups:
         state_metrics = {"State": state_name}
         for variable in numeric_variables:
@@ -28,6 +28,8 @@ def calculate_state_statistics(raw_data,state, numeric_variables):
     state_statistics = pd.DataFrame(statistics_summary)
 
     # Export statistics to CSV
-    state_statistics.to_csv()
+    state_statistics.to_csv("output/state_statistics.csv", index=False)
 
+    print("State statistics successfully calculated.")
+    return state_statistics
 
