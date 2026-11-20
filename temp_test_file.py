@@ -80,11 +80,11 @@ if __name__ == "__main__":
     negative_debt_equity = identify_negative_equity(cleaned_data)
 
     # Display number of businesses identified
-    print("\nBusinesses with negative equity:")
-    print(len(negative_debt_equity))
+    #print("\nBusinesses with negative equity:")
+    #print(len(negative_debt_equity))
 
     # Display first five businesses
-    print("\nFirst five businesses with negative equity:")
-    print(negative_debt_equity.head())
+    #print("\nFirst five businesses with negative equity:")
+    #print(negative_debt_equity.head())
 
-    print("\nNegative equity test completed successfully.")
+    #print("\nNegative equity test completed successfully.")
