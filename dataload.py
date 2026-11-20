@@ -1,15 +1,16 @@
 # This is Step 1
 # Need to install openpyxl to read Excel files from the Terminal.
 # pip install pandas openpyxl
+
 import pandas as pd
-from pathlib import path
+from pathlib import Path
 
 def load_data ():
     # this will locate file from the user's downloads folder
-    input_file = path.home() / "Downloads" / "QKN1 Program dataset.xlsx"
+    input_file = Path.home() / "Downloads" / "QKN1 Program dataset.xlsx"
 
     #checks that the file exists
-    IF NOT input_file.exists():
+    if not input_file.exists():
         raise FileNotFoundError(f"Could not find the dataset at: {input_file}")
 
     # loads data to dataframe raw_data.
@@ -25,3 +26,11 @@ def load_data ():
     print(f"Columns loaded: {raw_data.shape[1]}")
 
 
+    #Display first 5 rows.
+    print("\nPrevie of loaded data:")
+    print(raw_data.head())
+
+    return raw_data
+
+
+raw_data = load_data()
