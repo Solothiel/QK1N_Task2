@@ -27,10 +27,10 @@ def load_data ():
 
 
     #Display first 5 rows.
-    print("\nPrevie of loaded data:")
+    print("\nPreview of loaded data:")
     print(raw_data.head())
 
     return raw_data
 
-
-raw_data = load_data()
+#  to test results used below commented out as not necessary in remaining program.
+# raw_data = load_data()
