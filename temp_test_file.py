@@ -1,5 +1,5 @@
 from duplicate_removal import remove_duplicates
-
+from descriptive_statistics import calculate_state_statistics
 
 if __name__ == "__main__":
 
@@ -32,3 +32,24 @@ if __name__ == "__main__":
     print(cleaned_data.head())
 
     print("\nData cleaning test completed successfully.")
+
+    print("\n--- STATE STATISTICS TEST RESULTS ---")
+
+    # Calculate descriptive statistics by state
+    state_statistics = calculate_state_statistics(
+        cleaned_data,
+        state,
+        numeric_variables
+    )
+
+    # Display state statistics
+    print("\nState statistics:")
+    print(state_statistics.head())
+
+    # Verify results
+    print("\nNumber of states:", len(state_statistics))
+
+    print("\nState statistics columns:")
+    print(state_statistics.columns.tolist())
+
+    print("\nState statistics test completed successfully.")
