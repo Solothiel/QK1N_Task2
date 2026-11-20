@@ -1,5 +1,6 @@
 from duplicate_removal import remove_duplicates
 from descriptive_statistics import calculate_state_statistics
+from debt_to_income import debt_to_income_ratio
 
 if __name__ == "__main__":
 
@@ -53,3 +54,21 @@ if __name__ == "__main__":
     print(state_statistics.columns.tolist())
 
     print("\nState statistics test completed successfully.")
+
+    print("\n--- DEBT-TO-INCOME TEST RESULTS ---")
+
+    # Calculate Debt-to-Income
+    cleaned_data = debt_to_income_ratio(cleaned_data)
+
+    # Display Debt-to-Income results
+    print("\nDebt-to-Income:")
+    print(cleaned_data[
+              ["Business ID", "Total Long-term Debt",
+               "Total Revenue", "Debt-to-Income"]
+          ].head())
+
+    # Check missing values
+    print("\nMissing Debt-to-Income values:")
+    print(cleaned_data["Debt-to-Income"].isnull().sum())
+
+    print("\nDebt-to-Income test completed successfully.")
