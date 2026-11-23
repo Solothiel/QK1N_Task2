@@ -22,15 +22,31 @@ def load_data ():
         raise ValueError("The dataset was loaded, but its contains no data.")
 
     print("Financial Data successfully loaded to raw_data.")
-    print(f"Rows loaded: {raw_data.shape[0]}")
-    print(f"Columns loaded: {raw_data.shape[1]}")
-
-
-    #Display first 5 rows.
-    print("\nPreview of loaded data:")
-    print(raw_data.head())
 
     return raw_data
 
-#  to test results used below commented out as not necessary in remaining program.
-# raw_data = load_data()
+
+def clean_data():
+    #load raw_data dataframe.
+    raw_data = load_data()
+
+    # Identify non financial data
+    business_id = "Business ID"
+    state = "Business State"
+
+    # Identify the numeric variables
+    numeric_variables = [
+        "Total Long-term Debt",
+        "Total Equity",
+        "Debt-to-Equity",
+        "Total Liabilities",
+        "Total Revenue"
+    ]
+
+
+    return raw_data, business_id, state, numeric_variables
+
+
+
+
+
