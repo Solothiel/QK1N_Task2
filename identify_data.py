@@ -21,7 +21,7 @@ def clean_data():
         "Total Revenue"
     ]
 
-    # Verify numberic data types.
+    # Verify numeric data types.
     for variable in numeric_variables:
         raw_data[variable] = pd.to_numeric(
             raw_data[variable],
