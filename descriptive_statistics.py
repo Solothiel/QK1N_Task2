@@ -1,9 +1,7 @@
-# Step 4 state_statistics  Calculated descriptive statistics
+# Step 3 state_statistics Calculated descriptive statistics
 
 
 import pandas as pd
-from pathlib import Path
-from duplicate_removal import remove_duplicates
 
 def calculate_state_statistics(raw_data,state, numeric_variables):
 
@@ -28,13 +26,5 @@ def calculate_state_statistics(raw_data,state, numeric_variables):
     # store results in new Dataframe
     state_statistics = pd.DataFrame(statistics_summary)
 
-    output_folder = Path("output")
-    output_folder.mkdir(exist_ok=True)
-
-
-    # Export statistics to CSV
-    state_statistics.to_csv("output/state_statistics.csv", index=False)
-
-    print("State statistics successfully calculated.")
     return state_statistics
 
