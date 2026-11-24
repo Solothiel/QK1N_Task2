@@ -10,6 +10,14 @@ def main():
     # Step 1 → loading the dataframe with dataset and identifying the columns
     raw_data, business_id, state, numeric_variables = identify_data()
 
+    raw_data, business_id, state, numeric_variables = identify_data()
+
+    print("ACTUAL EXCEL COLUMNS:")
+    print(raw_data.columns.tolist())
+
+    print("NUMERIC VARIABLES:")
+    print(numeric_variables)
+
     # Step 2 → looking for and removing any exact duplicates.
     raw_data = remove_duplicates(raw_data)
 
