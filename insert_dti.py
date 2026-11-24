@@ -2,6 +2,6 @@
 
 def insert_debt_to_income(raw_data, debt_to_income):
 
-raw_data["Debt to Income"] = debt_to_income
+    raw_data["Debt to Income"] = debt_to_income
 
-return raw_data
+    return raw_data
