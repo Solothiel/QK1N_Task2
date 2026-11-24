@@ -52,11 +52,11 @@ QK1N_Task2/
 
 
 ## NOTES:
-   Excel column names must match
-   Duplicates only removes exact duplicates.
-   Missing financial data isn't excluded from the descriptive_statistics so those values for revenue might not be correct.
-   Business with zero value in revenue, are giving a NaN, this is only to prevent the division-by-zero error.
-   The program only displays the results as exporting was not a requirement.
+   * Excel column names must match
+   * Duplicates only remove exact duplicates.
+   * Missing financial data isn't excluded from the descriptive_statistics so those values for revenue might not be correct.
+   * Businesses with zero value in revenue are given a NaN. This is only to prevent the division-by-zero error.
+   * The program only displays the results as exporting was not a requirement.
 
 
 
