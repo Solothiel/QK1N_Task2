@@ -3,8 +3,8 @@
 
 
 ## **Project Overview:**
-	I used Pycharm community edition, to build out the code. I used the flowchart from Task 1 as well as the pseudo code to build. 
-	
+	I used Pycharm community edition, to build out the code. I used the flowchart from Task 1 as well as the pseudo code to build. I didn't include part 1 doc file, but i did add the flowchart.
+
 	
 ### Technologies
 * **Language:** Python `3.13`
@@ -26,8 +26,9 @@
 	
 ## **Structure:**
 ```
-QK1N_Task2
-│
+QK1N_Task2/
+├── images/
+│   └── flowchart.png
 ├── main.py
 ├── dataload.py
 ├── duplicate_removal.py
