@@ -57,6 +57,12 @@ QK1N_Task2/
    * Missing financial data isn't excluded from the descriptive_statistics so those values for revenue might not be correct.
    * Businesses with zero value in revenue are given a NaN. This is only to prevent the division-by-zero error.
    * The program only displays the results as exporting was not a requirement.
+   * The sequence of processes is per the course even though logically it should be different
+   * Stage 2. Should be the cleaning process (duplicate removal and removing of 0 in revenue)
+   * Stage 3. Should be generation of the debt to income ratio.
+   * Stage 4. Should be the addition of debt to income column with data
+   * Stage 5. Should be Negative Value (interchangeable with 6)
+   * Stage 6. Should be the Descriptive Statistics, which would include the debt to income.
 
 
 
