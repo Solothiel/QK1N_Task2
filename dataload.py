@@ -26,7 +26,7 @@ def load_data ():
     return raw_data
 
 
-def clean_data():
+def identify_data():
     #load raw_data dataframe.
     raw_data = load_data()
 
