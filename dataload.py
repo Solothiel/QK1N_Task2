@@ -38,7 +38,7 @@ def identify_data():
     numeric_variables = [
         "Total Long-term Debt",
         "Total Equity",
-        "Debt-to-Equity",
+        "Debt to Equity",
         "Total Liabilities",
         "Total Revenue"
     ]

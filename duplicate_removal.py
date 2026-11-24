@@ -1,11 +1,7 @@
 # Step 2 → duplicate removal checks for duplicates and removes them.
 
-#imports the data from step 2
-from dataload import identify_data
 
-
-def remove_duplicates():
-    raw_data, business_id, state, numeric_variables = identify_data()
+def remove_duplicates(raw_data):
 
     duplicates = raw_data[raw_data.duplicated()]
 
@@ -16,6 +12,6 @@ def remove_duplicates():
     else:
        print(f"No duplicates found.")
 
-    return raw_data, business_id, state, numeric_variables
+    return raw_data
 
 
