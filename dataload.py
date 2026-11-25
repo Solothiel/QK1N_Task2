@@ -1,6 +1,8 @@
 # This is Step 1
 # Need to install openpyxl to read Excel files from the Terminal.
+# run the pip install inside the terminal to install openpyxl
 # pip install pandas openpyxl
+
 
 import pandas as pd
 from pathlib import Path
